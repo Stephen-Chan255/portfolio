@@ -1,232 +1,221 @@
 <!doctype html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="style/index.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Stephen's Portfolio</title>
+	</head>
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="style/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Stephen's Portfolio</title>
-  </head>
+	<body>
+		<!-- Header -->
+		<header id="header">
+			<div class="header-container">
+				<a href="#" class="logo">Stephen Chen</a>
+				<nav>
+					<ul>
+						<li><a href="#home" onclick="toggle()">Home</a></li>
+						<li><a href="#skills" onclick="toggle()">Skills</a></li>
+						<li><a href="#projects" onclick="toggle()">Projects</a></li>
+						<li><a href="#contact" onclick="toggle()">Contact</a></li>
+					</ul>
+					<div class="mini-nav" onclick="toggle()">
+						<span class="mini-nav-line"></span>
+						<span class="mini-nav-line"></span>
+						<span class="mini-nav-line"></span>
+					</div>
+				</nav>
+			</div>
+		</header>
 
-  <body>
-    <!-- Header -->
-    <header id="header">
-      <div class="header-container">
-        <a href="#" class="logo">Stephen Chen</a>
-        <nav>
-          <ul>
-            <li><a href="#home" onclick="toggle()">Home</a></li>
-            <li><a href="#skills" onclick="toggle()">Skills</a></li>
-            <li><a href="#projects" onclick="toggle()">Projects</a></li>
-            <li><a href="#contact" onclick="toggle()">Contact</a></li>
-          </ul>
-          <div class="mini-nav" onclick="toggle()">
-            <span class="mini-nav-line"></span>
-            <span class="mini-nav-line"></span>
-            <span class="mini-nav-line"></span>
-          </div>
-        </nav>
-      </div>
-    </header>
+		<a href="#" id="to-top-btn" hidden><img src="img/to-top.svg" alt="to-top-icon"></a>
 
-    <a href="#" id="to-top-btn" hidden><img src="img/to-top.svg" alt="to-top-icon"></a>
+		<!-- Homepage -->
+		<section id="home">
+			<div class="content">
+				<div class="content-left">
+					<h1>Hey, I'm Stephen</h1>
+					<h2>
+						A <span>Web Developer</span> with 2+ years of experience in Full-Stack Devenlopent, skills including
+						JavaScript, React.JS, PHP, Java etc.
+					</h2>
+					<div class="btn-box">
+						<a href="#projects" class="btn">View Projects</a>
+					</div>
+				</div>
+				<img src="img/cgq.png" alt="Stephen Chen">
+			</div>
+		</section>
+		<!-- Skills -->
+		<section id="skills">
+			<div class="content">
+				<h3>Skills</h3>
+				<div class="card-container">
+					<div class="card">
+						<div class="card-header">
+							<img src="img/design.svg">
+						</div>
+						<div class="card-body">
+							<div class="title">Web Design</div>
+							<p class="text">
+								Experience in “customer first” UI/UX design, which requires transferring user requirements into
+								interactive user interfaces.
+							</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header">
+							<img src="img/front-end.svg">
+						</div>
+						<div class="card-body">
+							<div class="title">Front End Development</div>
+							<p class="text">
+								Build user interfaces with HTML, CSS, JavaScript. Modern technologies and libraries such as React.js,
+								Sass/Scss, Bootstrap will also be appliied.
+							</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header">
+							<img src="img/back-end.svg">
+						</div>
+						<div class="card-body">
+							<div class="title">Back End Development</div>
+							<p class="text">
+								Build server-side part of the website with PHP, MySQL, Java etc. Frameworks such as Laravel will also be
+								used.
+							</p>
+						</div>
+					</div>
+				</div>
+		</section>
+		<!-- Projects -->
+		<section id="projects">
+			<div class="content">
+				<h3>Projects</h3>
+				<div class="card-container">
+					<!-- Project: react-calendar -->
+					<div class="card">
+						<div class="card-header">
+							<a href="https://online-calendar-frontend.herokuapp.com/" target="_blank">
+								<img src="img/project/react-calendar.png" alt="react-calendar">
+							</a>
+						</div>
+						<div class="card-body">
+							<div class="title">Calendar System</div>
+							<p class="text">A web calendar system helps to manage employees’ work.</p>
+						</div>
+						<div class="card-footer">
+							<div class="techs">React, FullCalendars, PHP & MySQL</div>
+							<a href="https://github.com/Stephen-Chan255/online-calendar-frontend" target="_blank"
+								class="fa fa-github"></a>
+						</div>
+					</div>
+					<!-- Project: food-maker -->
+					<div class="card">
+						<div class="card-header">
+							<a href="https://food-maker.herokuapp.com/" target="_blank">
+								<img src="img/project/food-maker.png" alt="food-maker">
+							</a>
+						</div>
+						<div class="card-body">
+							<div class="title">Food Maker</div>
+							<p class="text">A website to learn how to cook with detailed recipes.</p>
+						</div>
+						<div class="card-footer">
+							<div class="techs">Bootstrap, JavaScript, PHP</div>
+							<a href="https://github.com/Stephen-Chan255/food-maker" target="_blank" class="fa fa-github"></a>
+						</div>
+					</div>
+					<!-- Project: google-map -->
+					<div class="card">
+						<div class="card-header">
+							<a href="https://map-location-visualisation.herokuapp.com/" target="_blank">
+								<img src="img/project/google-map.png" alt="map-location-visualisation">
+							</a>
+						</div>
+						<div class="card-body">
+							<div class="title">Map Location Visualisation</div>
+							<p class="text">A web feature that displays locations on a map.</p>
+						</div>
+						<div class="card-footer">
+							<div class="techs">JavaScript, PHP, Google Maps APIs</div>
+							<a href="https://github.com/Stephen-Chan255/map-location-visualisation" target="_blank"
+								class="fa fa-github"></a>
+						</div>
+					</div>
+					<!-- Project: local-konwledge -->
+					<div class="card">
+						<div class="card-header">
+							<img src="img/project/local-knowledge.png" alt="Local-konwledge">
+						</div>
+						<div class="card-body">
+							<div class="title">Web Admin Portal</div>
+							<p class="text">Web admin portal for mobile app "Local Knowledge" to upload data.</p>
+						</div>
+						<div class="card-footer">
+							<div class="techs">HTML, CSS, Bootstrap, PHP</div>
+							<a href="https://github.com/Stephen-Chan255/local-knowledge" target="_blank" class="fa fa-github"></a>
+						</div>
+					</div>
+					<!-- Project: location-logging -->
+					<div class="card">
+						<div class="card-header">
+							<img src="img/project/location-logging.png" alt="Location-logging">
+						</div>
+						<div class="card-body">
+							<div class="title">Location Logging</div>
+							<p class="text">An Android mobile app for tracking & visualizing users’ locations.</p>
+						</div>
+						<div class="card-footer">
+							<div class="techs">Android & Kotlin, Google Maps API</div>
+							<a href="https://github.com/Stephen-Chan255/LocationLogging" target="_blank" class="fa fa-github"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Contact -->
+		<section id="contact">
+			<div class="content">
+				<h3>Contact Me</h3>
+				<!-- Contact-methods -->
+				<div class="contact-list">
+					<div class="contact-box">
+						<i class="fa fa-envelope"></i>
+						<a href="mailto:stephen.chan255@gmail.com" target="_blank">stephen.chan255@hotmail.com</a>
+					</div>
+					<div class="contact-box">
+						<i class="fa fa-phone"></i>
+						<p>(+61) 481 132 455</p>
+					</div>
+					<div class="contact-box">
+						<i class="fa fa-map-marker"></i>
+						<p>Salisbury, Brisbane, Australia</p>
+					</div>
+				</div>
+				<!-- Icons -->
+				<div class="icons">
+					<a href="https://github.com/stephen-chan-255" target="_blank">
+						<i class="fa fa-github-square"></i>
+					</a>
+					<a href="https://www.linkedin.com/in/stephen-chan255" target="_blank">
+						<i class="fa fa-linkedin-square"></i>
+					</a>
+					<a href="https://www.facebook.com/stephen.chen.35728466" target="_blank">
+						<i class="fa fa-facebook-square"></i>
+					</a>
+					<a href="https://stephen-chan255.github.io/blogs" target="_blank">
+						<i class="fa fa-rss-square"></i>
+					</a>
+				</div>
+			</div>
+			<footer>
+				<p>&copy; 2020, Stephen Chen. All copyright reserved</p>
+			</footer>
+		</section>
 
-    <!-- Homepage -->
-    <section id="home">
-      <div class="content">
-        <div class="content-left">
-          <h1>Hey, I'm Stephen</h1>
-          <h2>
-            A <span>Web Developer</span> with 2+ years of experience in Full-Stack Devenlopent, skills including
-            JavaScript, React.JS, PHP, Java etc.
-          </h2>
-          <div class="btn-box">
-            <a href="#projects" class="btn">View Projects</a>
-          </div>
-        </div>
-        <img src="img/cgq.png" alt="Stephen Chen">
-      </div>
-    </section>
-    <!-- Skills -->
-    <section id="skills">
-      <div class="content">
-        <h3>Skills</h3>
-        <div class="card-container">
-          <div class="card">
-            <div class="card-header">
-              <img src="img/design.svg">
-            </div>
-            <div class="card-body">
-              <div class="title">Web Design</div>
-              <p class="text">
-                Experience in “customer first” UI/UX design, which requires transferring user requirements into
-                interactive user interfaces.
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header">
-              <img src="img/front-end.svg">
-            </div>
-            <div class="card-body">
-              <div class="title">Front End Development</div>
-              <p class="text">
-                Build user interfaces with HTML, CSS, JavaScript. Modern technologies and libraries such as React.js,
-                Sass/Scss, Bootstrap will also be appliied.
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header">
-              <img src="img/back-end.svg">
-            </div>
-            <div class="card-body">
-              <div class="title">Back End Development</div>
-              <p class="text">
-                Build server-side part of the website with PHP, MySQL, Java etc. Frameworks such as Laravel will also be
-                used.
-              </p>
-            </div>
-          </div>
-        </div>
-    </section>
-    <!-- Projects -->
-    <section id="projects">
-      <div class="content">
-        <h3>Projects</h3>
-        <div class="card-container">
-          <!-- Project: react-calendar -->
-          <div class="card">
-            <div class="card-header">
-              <a href="https://online-calendar-frontend.herokuapp.com/" target="_blank">
-                <img src="img/project/react-calendar.png" alt="react-calendar">
-              </a>
-            </div>
-            <div class="card-body">
-              <div class="title">Calendar System</div>
-              <p class="text">A web calendar system helps to manage employees’ work.</p>
-            </div>
-            <div class="card-footer">
-              <div class="techs">React, FullCalendars, PHP & MySQL</div>
-              <a href="https://github.com/Stephen-Chan255/online-calendar-frontend" target="_blank"
-                class="fa fa-github"></a>
-            </div>
-          </div>
-          <!-- Project: food-maker -->
-          <div class="card">
-            <div class="card-header">
-              <a href="https://food-maker.herokuapp.com/" target="_blank">
-                <img src="img/project/food-maker.png" alt="food-maker">
-              </a>
-            </div>
-            <div class="card-body">
-              <div class="title">Food Maker</div>
-              <p class="text">A website to learn how to cook with detailed recipes.</p>
-            </div>
-            <div class="card-footer">
-              <div class="techs">Bootstrap, JavaScript, PHP</div>
-              <a href="https://github.com/Stephen-Chan255/food-maker" target="_blank" class="fa fa-github"></a>
-            </div>
-          </div>
-          <!-- Project: google-map -->
-          <div class="card">
-            <div class="card-header">
-              <a href="https://map-location-visualisation.herokuapp.com/" target="_blank">
-                <img src="img/project/google-map.png" alt="map-location-visualisation">
-              </a>
-            </div>
-            <div class="card-body">
-              <div class="title">Map Location Visualisation</div>
-              <p class="text">A web feature that displays locations on a map.</p>
-            </div>
-            <div class="card-footer">
-              <div class="techs">JavaScript, PHP, Google Maps APIs</div>
-              <a href="https://github.com/Stephen-Chan255/map-location-visualisation" target="_blank"
-                class="fa fa-github"></a>
-            </div>
-          </div>
-          <!-- Project: local-konwledge -->
-          <div class="card">
-            <div class="card-header">
-              <img src="img/project/local-knowledge.png" alt="Local-konwledge">
-            </div>
-            <div class="card-body">
-              <div class="title">Web Admin Portal</div>
-              <p class="text">Web admin portal for mobile app "Local Knowledge" to upload data.</p>
-            </div>
-            <div class="card-footer">
-              <div class="techs">HTML, CSS, Bootstrap, PHP</div>
-              <a href="https://github.com/Stephen-Chan255/local-knowledge" target="_blank" class="fa fa-github"></a>
-            </div>
-          </div>
-          <!-- Project: location-logging -->
-          <div class="card">
-            <div class="card-header">
-              <img src="img/project/location-logging.png" alt="Location-logging">
-            </div>
-            <div class="card-body">
-              <div class="title">Location Logging</div>
-              <p class="text">An Android mobile app for tracking & visualizing users’ locations.</p>
-            </div>
-            <div class="card-footer">
-              <div class="techs">Android & Kotlin, Google Maps API</div>
-              <a href="https://github.com/Stephen-Chan255/LocationLogging" target="_blank" class="fa fa-github"></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Contact -->
-    <section id="contact">
-      <div class="content">
-        <h3>Contact Me</h3>
-        <!-- Contact-methods -->
-        <div class="contact-list">
-          <div class="contact-box">
-            <i class="fa fa-envelope"></i>
-            <a href="mailto:stephen.chan255@gmail.com" target="_blank">stephen.chan255@gmail.com</a>
-          </div>
-          <div class="contact-box">
-            <i class="fa fa-phone"></i>
-            <p>(+61) 481 132 455</p>
-          </div>
-          <div class="contact-box">
-            <i class="fa fa-map-marker"></i>
-            <p>Salisbury, Brisbane, Australia</p>
-          </div>
-        </div>
-        <!-- Icons -->
-        <div class="icons">
-          <a href="https://github.com/Stephen-Chan255" target="_blank">
-            <i class="fa fa-github-square"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/stephen-chan255" target="_blank">
-            <i class="fa fa-linkedin-square"></i>
-          </a>
-          <a href="https://www.facebook.com/stephen.chen.35728466" target="_blank">
-            <i class="fa fa-facebook-square"></i>
-          </a>
-          <a href="https://stephen-chan255.github.io/blogs" target="_blank">
-            <i class="fa fa-rss-square"></i>
-          </a>
-        </div>
-      </div>
-      <footer>
-        <p>&copy; 2020, Stephen Chen. All copyright reserved</p>
-      </footer>
-    </section>
-
-    <script type="text/javascript">
-      window.addEventListener("scroll", function () {
-        let header = document.querySelector("header");
-        header.classList.toggle("sticky", window.pageYOffset > 0);
-        document.querySelector("#to-top-btn").hidden = window.pageYOffset == 0;
-      })
-      function toggle() {
-        let header = document.querySelector("header");
-        header.classList.toggle("active");
-      }
-    </script>
-  </body>
+		<script async src="index.js"></script>
+	</body>
 </html>
